@@ -19,10 +19,10 @@ img {
 <script>
   fetch('https://script.google.com/macros/s/AKfycbwPU-mMBUuAoKfv09ROkFZUDwa6IHnYxWVUzEr_EU8LXIletjXPIvaw_I6k5EaYMRmBHA/exec')
   .then(response => response.json())
-  .then(result => document.getElementById("p1").innerHTML = result.data document.getElementById("img1").src = result.pic);
+  .then(result => document.getElementById("p1").innerHTML = result.data; document.getElementById("img1").src = result.pic);
 </script>
 
-<p>The paragraph above was 60 changed by a script.</p>
+<p>The paragraph above was 70 changed by a script.</p>
 
 </body>
 </html>
