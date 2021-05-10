@@ -17,7 +17,7 @@ img {
 <p id="p1">(Virtueel)</p>
 
 <script>
-  fetch('https://script.google.com/macros/s/AKfycbwsgX8uAMdg3ohtC2j1-MUo-kCZuRS-7Dnoogw_BflnHFd-e-QGigqe_9UExol4y-xazw/exec')
+  fetch('https://script.google.com/macros/s/AKfycbztWrJPJtYCxVDepfMDwEy7-NLiA0pcnk5HumNBQXMjCPYnP10YUmBPYn6CnT4lX7ACeA/exec')
   .then(response => response.json())
 .then(data => document.getElementById("p1").innerHTML = data.data)
     .then(data => document.getElementById("img1").src = data.pic);
