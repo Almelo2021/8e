@@ -12,12 +12,12 @@ img {
 }
 </style>
 
-<img id="img1" src="https://cdn.countryflags.com/thumbs/italy/flag-round-250.png" style="width:30%;">
+<img id="img1" src="https://cdn.countryflags.com/thumbs/italy/flag-round-250.png" style="width:20%;">
 
 <p id="p1">(Virtueel)</p>
 
 <script>
-  fetch('https://script.google.com/macros/s/AKfycbypbLtNORAdm0zcxDku1Kvk6uTg5xKf4bG3j1w1VnnLOvfQyr6rvhCf-8Iv1u6h5VYgVQ/exec')
+  fetch('https://script.google.com/macros/s/AKfycbxFCVER-torzMF1-ZEIP71rQzum-v6YHciA2JjOfhdYqnVtd23iMWiVcIkM_PsgdacJRA/exec')
   .then(response => response.json())
 .then(data => document.getElementById("p1").innerHTML = data.data)
     .then(data => document.getElementById("img1").src = data.pic);
