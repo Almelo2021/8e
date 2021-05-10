@@ -3,13 +3,29 @@
 <body>
   <title>8e</title>
 <h2>Tegenstander Nederland achtste finale</h2>
+  
+  <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<img src="https://cdn.countryflags.com/thumbs/italy/flag-round-250.png" id="img1" alt="Paris" style="width:30%;">
 
 <p id="p1">(Virtueel)</p>
 
 <script>
   fetch('https://script.google.com/macros/s/AKfycbyLNcWukVGvgyUFzv9mjA9M0XHU5m1nIaWkDU3ZR8RIb1QKppOc40Vr36evidLo8mjQUg/exec')
   .then(response => response.text())
-.then(data => document.getElementById("p1").innerHTML = data);
+.then(data => document.getElementById("p1").innerHTML = data.data)
+    .then(data => document.getElementById("img1").src = data.pic);
 </script>
 
 <p>The paragraph above was changed by a script.</p>
