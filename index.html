@@ -20,17 +20,18 @@ img {
 <p id="p1">(Virtueel)</p>
 
 <script>
-  fetch('https://script.google.com/macros/s/AKfycbwPU-mMBUuAoKfv09ROkFZUDwa6IHnYxWVUzEr_EU8LXIletjXPIvaw_I6k5EaYMRmBHA/exec')
+  fetch('https://script.google.com/macros/s/AKfycbzpoSAjHFo258gY4ZRNR2TYwdcX0gMoQzQgRpDNCKVHYA899Ow4OtSUOR5mubTLfr_sWg/exec')
   .then(response => response.json())
   .then(function(result) { // (**)
 
   document.getElementById("p1").innerHTML = result.data;
+  document.getElementById("h3").innerHTML = result.tr;
   document.getElementById("img1").src = result.pic;
 
 });
 </script>
 
-<h3>Italy</h3>
+<h3 id="h3">Italy 100</h3>
 
 </body>
 </html>
